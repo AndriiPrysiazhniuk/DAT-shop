@@ -1,15 +1,18 @@
-
 .App-header {
-    background-color: #1E6140;
-    color: #ffffff;
-    font-size: 16px;
+    background-image: url("images/bg1.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 .Container {
     max-width: 1420px;
     margin: 0 auto;
+
 }
 
 .Header-menu {
@@ -17,6 +20,8 @@
     align-items: center;
     justify-content: center;
     height: 50px;
+    background-color: #1E6140;
+    color: #ffffff;
 }
 
 .Header__menu-list {
@@ -43,7 +48,7 @@
 
 
 .Header__list-item {
-    padding: 14px 23px;
+    padding: 17px 23px;
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
@@ -59,7 +64,7 @@
     position: absolute;
     background-image: url("images/arrow.svg");
     right: 5px;
-    top: 22px;
+    top: 20px;
     height: 7px;
     width: 12px;
     background-repeat: no-repeat;
@@ -68,7 +73,7 @@
 /* Випадаюче меню */
 .About__us-menu {
     position: absolute;
-    top: 100%;
+    top: 50px;
     left: 0;
     width: 215px;
     background-color: #347153;
@@ -102,15 +107,13 @@
 
 /* Елементи меню */
 .About__us-menu li {
-    padding: 12px 16px;
+    padding: 12px 16px 16px 30px;
     color: #fff;
-    padding-left: 30px;
     transition: background-color 0.2s ease, padding-left 0.2s ease;
 }
 
 .About__us-menu li:hover {
     background-color: rgba(0, 0, 0, 0.15);
-    /*padding-left: 22px;*/
 }
 
 .Header-registration {
@@ -126,7 +129,6 @@
     cursor: pointer;
     padding: 7px 7px 3px;
     border-bottom: 1px solid transparent;
-    line-height: 24px;
 }
 
 .Header-registration a:hover {
@@ -154,4 +156,177 @@
     right: 90px;
     top: 8px;
     cursor: auto;
+}
+
+.footer {
+    height: 523px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 17px;
+}
+
+.copyright {
+    margin-top: 34px;
+    font-size: 14px;
+    color: #00000099;
+}
+
+.copyright:before {
+    content: '';
+    display: block;
+    /*position: absolute;*/
+    height: 1px;
+    width: 1110px;
+    background-color: #347153;
+    /*right: 0;*/
+    /*bottom: 34px;*/
+    /*left: 0;*/
+    margin: 0 auto 34px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 120px 0 135px;
+}
+
+.footer__text-logo {
+
+}
+
+.footer-logo {
+    background-image: url("images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 109px;
+    height: 49px;
+}
+
+.footer-text {
+    max-width: 221px;
+    color: #00000099;
+}
+
+.footer-info li:first-child {
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+.footer-list li + li {
+    margin: 12px 2px;
+}
+
+.footer-list {
+    width: 225px;
+}
+
+.footer-products li:first-child {
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+.footer-contacts li:first-child {
+    padding-bottom: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-contacts__feedback {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 18px;
+    padding: 12px 0 6px 0;
+    cursor: pointer;
+}
+
+
+.footer-contacts__feedback:before {
+    content: '';
+    background-image: url("images/call-me.svg");
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -46px;
+    top: 0;
+}
+
+.footer-contacts__feedback:after {
+    content: '';
+    position: absolute;
+    background-image: url("images/arrow.svg");
+    right: 60px;
+    top: 15px;
+    height: 7px;
+    width: 12px;
+    background-repeat: no-repeat;
+}
+
+
+.footer-contacts__feedback:hover.footer-contacts__feedback:after {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+.footer-contacts__feedback:Not(:hover).footer-contacts__feedback:after {
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+.footer-contacts__feedback:hover .call__me-back {
+    opacity: 1;
+    height: 133px;
+    transform: translateY(0);
+    color: #84BE51;
+    text-decoration: underline;
+
+}
+
+.call__me-back {
+    position: absolute;
+    top: 100%;
+    left: 3px;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer-contacts__email {
+    max-width: 1420px;
+    margin: 0 auto;
+    position: relative;
+    padding: 17px 0;
+    cursor: pointer;
+}
+
+.footer-contacts__email:before {
+    content: '';
+    background-image: url("images/mail-me.svg");
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -46px;
+    top: 5px;
+}
+
+.list__img{
+    background-image: url("images/heart.svg");
+    width: 41px;
+    height: 41px;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size: cover;
+}
+
+ul.list__img:hover{
+    fill: red;
 }
