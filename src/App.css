@@ -89,18 +89,18 @@
 }
 
 /* Поява меню при наведенні */
-.Header__list-item:first-child:hover .About__us-menu {
+.Header__list-item:first-child.open .About__us-menu {
     opacity: 1;
     height: 133px;
     transform: translateY(0);
 }
 
-.Header__list-item:first-child:hover.Header__list-item:first-child::after {
+.Header__list-item:first-child.open.Header__list-item:first-child::after {
     transform: rotate(180deg);
     transition: .5s;
 }
 
-.Header__list-item:first-child:Not(:hover).Header__list-item:first-child::after {
+.Header__list-item:first-child.Header__list-item:first-child::after {
     transform: rotate(360deg);
     transition: .5s;
 }
@@ -258,7 +258,7 @@
     content: '';
     position: absolute;
     background-image: url("images/arrow.svg");
-    right: 60px;
+    right: 55px;
     top: 15px;
     height: 7px;
     width: 12px;
@@ -278,11 +278,10 @@
 
 .footer-contacts__feedback:hover .call__me-back {
     opacity: 1;
-    height: 133px;
+    height: 41px;
     transform: translateY(0);
     color: #84BE51;
     text-decoration: underline;
-
 }
 
 .call__me-back {

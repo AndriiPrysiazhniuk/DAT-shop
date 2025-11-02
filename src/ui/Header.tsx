@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 export const Header = () => {
 
@@ -11,14 +11,21 @@ export const Header = () => {
         'Контакти'
 
     ]
+    const [isOpen, setOpen] = useState(false)
 
     return (
         <header className="App-header">
             <div className="Container">
                 <nav className={'Header-menu'}>
                     <ul className={'Header__menu-list'}>
-                        {menuList.map(el => {
-                            return (<li className={'Header__list-item'}>
+                        {menuList.map(( el,index) => {
+                            const setOpenHandler = () => {
+                                if (index === 0) {
+                                    setOpen(!isOpen)
+                                }
+                            }
+                            return (
+                                <li className={`Header__list-item  ${isOpen ? 'open' : ''}`} onClick={setOpenHandler}>
                                     {el}
                                     <ul className={'About__us-menu'}>
                                         <li>Наша команда</li>
@@ -47,8 +54,7 @@ export const Header = () => {
                 </div>
                 <ul>
                     <li>
-                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_25_1188)">
                                 <circle cx="34" cy="29" r="20" fill="transparent"/>
                                 <circle cx="34" cy="29" r="19.5" stroke="#8C3213"/>
