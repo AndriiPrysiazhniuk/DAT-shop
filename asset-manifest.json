@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/DAT-shop/static/css/main.f2b2535d.css",
+    "main.js": "/DAT-shop/static/js/main.a0172d73.js",
+    "static/js/835.dd88e3ed.chunk.js": "/DAT-shop/static/js/835.dd88e3ed.chunk.js",
+    "static/media/bg1.png": "/DAT-shop/static/media/bg1.c9ea0a2676c4728ca701.png",
+    "static/media/logo.svg": "/DAT-shop/static/media/logo.9dd18e626af56cd67bd2.svg",
+    "static/media/call-me.svg": "/DAT-shop/static/media/call-me.08132beca6bcfce6cb97.svg",
+    "static/media/heart.svg": "/DAT-shop/static/media/heart.bb9d2f896fcc9e406523.svg",
+    "static/media/enter.svg": "/DAT-shop/static/media/enter.f1067f15fa3ac336bdff.svg",
+    "index.html": "/DAT-shop/index.html",
+    "static/media/mail-me.svg": "/DAT-shop/static/media/mail-me.236be983ee8a7fcc7631.svg",
+    "static/media/arrow.svg": "/DAT-shop/static/media/arrow.98183139fdd2e710e267.svg",
+    "main.f2b2535d.css.map": "/DAT-shop/static/css/main.f2b2535d.css.map",
+    "main.a0172d73.js.map": "/DAT-shop/static/js/main.a0172d73.js.map",
+    "835.dd88e3ed.chunk.js.map": "/DAT-shop/static/js/835.dd88e3ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2b2535d.css",
+    "static/js/main.a0172d73.js"
+  ]
+}
