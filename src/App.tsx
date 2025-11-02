@@ -11,7 +11,7 @@ function App() {
             {/*<Headercopy/>*/}
 
             <main className="main">
-                <h1>Hi</h1>
+                {/*<h1>Hi</h1>*/}
             </main>
             <footer className="footer">
                 <div className={'Container footer__inner'}>
